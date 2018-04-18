@@ -6,8 +6,7 @@ if [ "$(id -u)" != "0" ]; then
    exit 1
 fi
 
-echo "doosan" | passwd pi --stdin
-apt-get update && apt-get upgrade
+apt-get update -y && apt-get upgrade -y
 apt-get install -my guake terminator neovim emacs zsh zsh-syntax-highlighting i3lock ntpdate gparted
 ntpdate uk.pool.ntp.org
 mkdir /tmp/deleteme && cd /tmp/deleteme
@@ -20,5 +19,6 @@ cd ~ && rm -rf /tmp/deleteme
 curl -sLf https://spacevim.org/install.sh | bash
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 git clone https://github.com/babbysross/configs ~/Projects/configs && cd ~/Projects/configs
-cp ~/Projects/configs/.zshrc ~/.zshrc
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+cp ~/Projects/configs/.zshrc ~/.zshrc
+cp ~/Projects/configs/Stars-at-night.png ~/Pictures
