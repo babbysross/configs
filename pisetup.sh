@@ -8,7 +8,7 @@ fi
 
 # Install some useful software
 apt-get update -y && apt-get upgrade -y
-apt-get install -my guake terminator neovim emacs zsh i3lock ntpdate gparted exfat-fuse exfat-utils neofetch
+apt-get install -my guake terminator neovim emacs zsh i3lock ntpdate gparted exfat-fuse exfat-utils neofetch lxshortcut
 
 # Setup a cron job to set the time on startup
 (crontab -l 2>/dev/null; echo "@reboot ntpdate uk.pool.ntp.org") | crontab -
@@ -29,7 +29,7 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 git clone https://github.com/babbysross/configs ~/Projects/configs && cd ~/Projects/configs
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-#Add some aliases to the .zshrc file, as well as a source for zsh-syntax-highlighting
+# Add some aliases to the .zshrc file, as well as a source for zsh-syntax-highlighting
 echo "alias zshconfig='nano ~/.zshrc'" >> ${ZDOTDIR:-$HOME}/.zshrc
 echo "alias ohmyzsh='nano ~/.oh-my-zsh'" >> ${ZDOTDIR:-$HOME}/.zshrc
 echo "alias x='startx'" >> ${ZDOTDIR:-$HOME}/.zshrc
