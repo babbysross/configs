@@ -7,7 +7,7 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 apt-get update -y && apt-get upgrade -y
-apt-get install -my guake terminator neovim emacs zsh i3lock ntpdate gparted exfat-fuse exfat-utils
+apt-get install -my guake terminator neovim emacs zsh i3lock ntpdate gparted exfat-fuse exfat-utils neofetch
 ntpdate uk.pool.ntp.org
 mkdir /tmp/deleteme && cd /tmp/deleteme
 wget -P /tmp/deleteme https://pcaro.es/d/otf-hermit-1.21.tar.gz
@@ -25,4 +25,4 @@ cp ~/Projects/configs/.zshrc ~/.zshrc
 echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 cp ~/Projects/configs/wallpapers/PiBackgroundITER.png /usr/share/rpd-wallpaper/
 sed -i 's/cliff.jpg/PiBackgroundITER.png/g' ~/.config/pcmanfm/LXDE-pi/desktop-items-0.conf
-cp ~/Projects/configs/Stars-at-night.png ~/Pictures
+cp ~/Projects/configs/wallpapers/Stars-at-night.png ~/Pictures
