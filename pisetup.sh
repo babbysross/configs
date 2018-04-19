@@ -21,7 +21,13 @@ curl -sLf https://spacevim.org/install.sh | bash
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 git clone https://github.com/babbysross/configs ~/Projects/configs && cd ~/Projects/configs
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-cp ~/Projects/configs/.zshrc ~/.zshrc
+echo "alias zshconfig='nano ~/.zshrc'" >> ${ZDOTDIR:-$HOME}/.zshrc
+echo "alias ohmyzsh='nano ~/.oh-my-zsh'" >> ${ZDOTDIR:-$HOME}/.zshrc
+echo "alias x='startx'" >> ${ZDOTDIR:-$HOME}/.zshrc
+echo "alias lock='i3lock -i ~/Pictures/Stars-at-night.png'" >> ${ZDOTDIR:-$HOME}/.zshrc
+echo "alias checktemp='opt/vc/bin/vcgencmd measure_temp'" >> ${ZDOTDIR:-$HOME}/.zshrc
+echo "alias ntp='sudo ntpdate uk.pool.ntp.org'" >> ${ZDOTDIR:-$HOME}/.zshrc
+echo "alias vim='vi'" >> ${ZDOTDIR:-$HOME}/.zshrc
 echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 cp ~/Projects/configs/wallpapers/PiBackgroundITER.png /usr/share/rpd-wallpaper/
 sed -i 's/cliff.jpg/PiBackgroundITER.png/g' ~/.config/pcmanfm/LXDE-pi/desktop-items-0.conf
