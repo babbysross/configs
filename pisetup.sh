@@ -32,3 +32,6 @@ echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> 
 cp ~/Projects/configs/wallpapers/PiBackgroundITER.png /usr/share/rpd-wallpaper/
 sed -i 's/cliff.jpg/PiBackgroundITER.png/g' ~/.config/pcmanfm/LXDE-pi/desktop-items-0.conf
 cp ~/Projects/configs/wallpapers/Stars-at-night.png ~/Pictures
+cp ~/Projects/configs/terminator/config ~/.config/terminator/config
+cp ~/Projects/configs/lxde/panel ~/.config/lxpanel/LXDE-pi/panels/panel 
+cp ~/Projects/configs/boot/config.txt /boot/config.txt

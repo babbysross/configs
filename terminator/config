@@ -1,0 +1,22 @@
+[global_config]
+  title_font = Hermit Medium 9
+  title_use_system_font = False
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#232729"
+    cursor_color = "#aaaaaa"
+    cursor_shape = ibeam
+    font = Hermit Medium 10
+    foreground_color = "#ece9e7"
+    palette = "#000000:#ff4545:#73d216:#faa41a:#056eb3:#b267e6:#00aaaa:#ece9e7:#555555:#ff5555:#8ae234:#cd9731:#8bced6:#ff55ff:#215d9c:#ffffff"
+    use_system_font = False
