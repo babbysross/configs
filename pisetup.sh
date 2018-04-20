@@ -16,7 +16,7 @@ apt-get install -my guake terminator neovim emacs zsh i3lock ntpdate gparted exf
 # Install the Hermit font for terminal use
 mkdir /tmp/deleteme && cd /tmp/deleteme
 wget -P /tmp/deleteme https://pcaro.es/d/otf-hermit-1.21.tar.gz
-tar -xvf /tmp/deleteme/otf-hermit-1.21.tar.gz 
+tar -xvf /tmp/deleteme/otf-hermit-1.21.tar.gz
 cp Hermit-bold.otf /usr/share/fonts/truetype/
 cp Hermit-light.otf /usr/share/fonts/truetype/
 cp Hermit-medium.otf /usr/share/fonts/truetype/
@@ -46,5 +46,5 @@ sed -i 's/cliff.jpg/PiBackgroundITER.png/g' ~/.config/pcmanfm/LXDE-pi/desktop-it
 # Place some premade files where they need to be
 cp ~/Projects/configs/wallpapers/Stars-at-night.png ~/Pictures
 cp ~/Projects/configs/terminator/config ~/.config/terminator/config
-cp ~/Projects/configs/lxde/panel ~/.config/lxpanel/LXDE-pi/panels/panel 
+cp ~/Projects/configs/lxde/panel ~/.config/lxpanel/LXDE-pi/panels/panel
 cp ~/Projects/configs/boot/config.txt /boot/config.txt
